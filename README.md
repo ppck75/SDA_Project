@@ -1,40 +1,40 @@
-# 🔐 무엇이 프라이버시를 거래하게 만드는가
+# 🔐 What Makes People Trade Their Privacy?
 
-[최종 연구 보고서 바로보기](./무엇이%20프라이버시를%20거래하게%20만드는가_사회조사분석%20보고서.pdf)
+[View the Final Research Report](./무엇이%20프라이버시를%20거래하게%20만드는가_사회조사분석%20보고서.pdf)
 
-## 프로젝트 개요
+## Project Overview
 
-이 프로젝트는 2025년 한국종합사회조사(KGSS)의 **디지털 사회 특별 모듈** 데이터를 활용하여 경제적 조건이 개인정보 제공 동의에 미치는 영향을 분석한 소논문(양적 연구)입니다. 특히 객관적 경제 지표와 개인이 느끼는 **주관적 경제 인식**(주관적 계층의식 및 재정 만족도)을 구분하여 총 4개의 가설을 수립하고, 이를 검증하기 위한 4개의 회귀 모형(WLS)을 설계했습니다.
+This quantitative research paper uses data from the **Digital Society Special Module** of the 2025 Korean General Social Survey (KGSS) to analyze how economic conditions affect individuals' willingness to consent to the provision of personal information. In particular, the study distinguishes objective economic indicators from individuals' **subjective economic perceptions** (subjective social status and financial satisfaction), formulates four hypotheses, and specifies four weighted least squares (WLS) regression models to test them.
 
-이를 통해 할인이나 무료 상품과 같은 경제적 혜택과 프라이버시를 교환하려는 소비자의 심리적 기제를 정량적으로 탐구했습니다.
+Through this analysis, the study quantitatively explores the psychological mechanisms underlying consumers' willingness to trade privacy for economic benefits such as discounts or free products.
 
-## 가설
+## Hypotheses
 
-| 이론적 배경 | 연구 가설 |
+| Theoretical Background | Research Hypothesis |
 |---|---|
-| 프라이버시 계산이론 | **가설 1.** 객관적 경제 조건인 월평균 가구소득이 증가하면, 할인이나 무료상품을 위한 개인정보 제공 동의는 감소할 것이다. |
-| 주관적 계층의식과 자아효능감 | **가설 2.** 주관적 계층의식이 증가하면, 개인정보 위험을 스스로 관리할 수 있다는 통제감이 높아져 할인이나 무료상품을 위한 개인정보 제공 동의는 증가할 것이다. |
-| 현재편향과 터널링 효과 | **가설 3.** 재정만족도가 감소하면, 미래의 프라이버시 위험보다 즉각적 보상을 더 크게 평가하게 되어 개인정보 제공 동의는 증가할 것이다. |
-| 인지적 평균화 | **가설 4.** 객관적 경제지표와 주관적 상태평가를 동시에 고려할 때, 개인정보 제공 동의는 객관적 소득보다 주관적 경제 인식과 더 밀접하게 관련될 것이다. |
+| Privacy calculus theory | **Hypothesis 1.** As average monthly household income, an objective economic condition, increases, willingness to consent to the provision of personal information in exchange for discounts or free products will decrease. |
+| Subjective social status and self-efficacy | **Hypothesis 2.** As subjective social status increases, the sense of control associated with being able to manage privacy risks independently will strengthen, thereby increasing willingness to consent to the provision of personal information in exchange for discounts or free products. |
+| Present bias and the tunneling effect | **Hypothesis 3.** As financial satisfaction decreases, individuals will place greater value on immediate rewards than on future privacy risks, thereby increasing their willingness to consent to the provision of personal information. |
+| Cognitive averaging | **Hypothesis 4.** When objective economic indicators and subjective assessments of one's circumstances are considered simultaneously, willingness to consent to the provision of personal information will be more closely associated with subjective economic perceptions than with objective income. |
 
-가설 1과 가설 2는 객관적 경제 조건과 주관적 계층의식이 서로 높은 상관관계를 가질 수 있음에도 불구하고, 개인정보 제공 동의에 대해서는 서로 다른 방향으로 작동할 가능성을 검토한다. 객관적 소득은 금전적 혜택의 한계효용과 프라이버시 위험 평가에 영향을 미칠 수 있는 반면, 주관적 계층의식은 자아효능감과 상황 통제감이라는 심리적 경로를 통해 작동할 수 있다. 따라서 두 변수를 반대 방향의 가설로 설정하는 데에는 해석상 한계가 존재하지만, 바로 이 지점에서 본 연구의 차별성이 있다. 본 연구는 경제적 조건을 단일한 소득 지표로 환원하지 않고, 객관적 자원과 주관적 지위 인식이 프라이버시 제공 상황에서 어떻게 구별되어 작동하는지를 검증한다.
+Hypotheses 1 and 2 examine the possibility that objective economic conditions and subjective social status may operate in opposite directions with respect to willingness to consent to the provision of personal information, even though the two may be highly correlated. Objective income may affect the marginal utility of financial benefits and the assessment of privacy risks, whereas subjective social status may operate through the psychological pathways of self-efficacy and perceived control over one's circumstances. Although positing effects in opposite directions for these two variables presents interpretive limitations, this distinction is also what differentiates the present study. Rather than reducing economic conditions to a single income indicator, this study tests how objective resources and subjective perceptions of social status operate differently in situations involving the provision of personal information.
 
-## 파일 구성
+## File Structure
 
-| 파일명 | 설명 |
+| File Name | Description |
 |---|---|
-| `kgss2025.csv` | 분석에 사용한 raw data입니다. KGSS 전체 누적 자료가 아니라, 연도별 데이터 중 **2025년에 해당하는 자료**입니다. |
-| `data_prep_and_analysis.ipynb` | 자료 전처리, 변수 재코딩, 기초분석, 시각화, WLS 회귀모형 분석을 수행한 Python Jupyter Notebook 파일입니다. |
-| `무엇이 프라이버시를 거래하게 만드는가_사회조사분석 보고서.pdf` | 분석 결과와 해석을 정리한 최종 보고서 PDF입니다. |
+| `kgss2025.csv` | The raw data used in the analysis. This file does not contain the full cumulative KGSS dataset; it contains the data for **2025** from the year-specific datasets. |
+| `data_prep_and_analysis.ipynb` | A Python Jupyter Notebook used for data preprocessing, variable recoding, descriptive analysis, visualization, and WLS regression analysis. |
+| `무엇이 프라이버시를 거래하게 만드는가_사회조사분석 보고서.pdf` | The final PDF report presenting the analysis results and their interpretation. |
 
-## 연구결과 및 인사이트
+## Research Findings and Insights
 
-- **주관적 경제 인식의 강력한 설명력 증명:** 실제 개인의 금전적 자산(객관적 소득)과 스스로 경제 상태를 어떻게 느끼는가(주관적 인식)를 동시에 회귀모형에 투입하여 고려했을 때, **객관적 소득의 영향력은 사라진 반면 주관적 인식의 영향력만이 통계적으로 매우 유의미하게 작동함을 밝혀냄.**
+- **Strong explanatory power of subjective economic perceptions:** When individuals' actual financial resources (objective income) and their perceptions of their own economic circumstances (subjective perceptions) were entered into the regression model simultaneously, **the effect of objective income disappeared, whereas only the effect of subjective perceptions remained highly statistically significant.**
 
-- **재정적 결핍과 터널링 효과(현재 편향) 확인:** 재정 만족도가 낮을수록 즉각적인 보상(할인, 무료 상품)을 얻기 위해 미래의 프라이버시 침해라는 잠재적 손실을 간과하는 '현재 편향'적 의사결정이 두드러지게 나타남.
+- **Financial deprivation and the tunneling effect (present bias):** Lower financial satisfaction was associated with a more pronounced tendency toward present-biased decision-making, in which individuals overlook the potential future loss posed by privacy violations in favor of immediate rewards such as discounts or free products.
 
-- **주관적 계층의식의 이중성 발견:** 반면, 주관적 계층의식이 높을수록 스스로 통제할 수 있다고 믿는 자아효능감이 상승하여, 프라이버시 위험마저 스스로 관리할 수 있다는 자신감으로 인해 오히려 개인정보 제공에 더 개방적인 태도를 보이는 역설적 결과를 확인함.
+- **The dual nature of subjective social status:** By contrast, higher subjective social status was associated with greater self-efficacy—the belief that one can remain in control—and, paradoxically, a more open attitude toward providing personal information due to greater confidence in one's ability to manage privacy risks independently.
 
-## 팀원
+## Team Members
 
-경희대학교 2021100380 박찬규, 2022100672 한우진, 2023100736 신아영, 2024100558 박소윤
+Kyung Hee University: 2021100380 박찬규, 2022100672 한우진, 2023100736 신아영, 2024100558 박소윤
